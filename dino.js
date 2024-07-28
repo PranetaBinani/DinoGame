@@ -83,6 +83,7 @@ window.onload=function(){
     requestAnimationFrame(update);
     setInterval(placecactus,1000)//1000millisecs=1sec
     document.addEventListener("keydown",movedino);
+    document.addEventListener("touchstart",movedino);
 }
 function update(){
    requestAnimationFrame(update);
@@ -135,7 +136,7 @@ function movedino(e){
         return;
     }
 
-    if ((e.code=="Space"|| e.code=="ArrowUp" || e.code="touchstart") && dino.y==dinoY){
+    if ((e.code=="Space"|| e.code=="ArrowUp" || e.code=="touchstart") && dino.y==dinoY){
        //jump
        jumpaudio.play();
        velocityy=-11.75;
