@@ -123,11 +123,11 @@ function update(){
      context.fillStyle="black";
      context.font="20px courier";
      score++;
-     context.fillText(score,5,20);
-   //high score
-   if(highscore<score)
-    highscore=score;
-    context.strokeText(highscore,650,20);
+     context.strokeText(score,650,20);
+   // //high score
+   // if(highscore<score)
+   //  highscore=score;
+   //  context.strokeText(highscore,50,20);
 }
    
 
