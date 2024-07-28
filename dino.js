@@ -136,7 +136,7 @@ function movedino(e){
         return;
     }
 
-    if ((e.code=="Space"|| e.code=="ArrowUp") && dino.y==dinoY){
+    if ((e.code=="Space"|| e.code=="ArrowUp" || e==1) && dino.y==dinoY){
        //jump
        jumpaudio.play();
        velocityy=-11.75;
